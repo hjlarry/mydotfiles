@@ -10,12 +10,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git zsh-autosuggestions
-)
-
-# Store your own aliases in the ~/.aliases file and load the here.
-[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
+plugins=(git zsh-autosuggestions) 
 
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
@@ -27,3 +22,7 @@ export PATH="/usr/local/opt/binutils/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
+# Store your own aliases in the ~/.aliases file and load the here.
+[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
+
+
