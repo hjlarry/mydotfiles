@@ -24,4 +24,5 @@ export PATH="$HOME/go/bin:$PATH"
 source $ZSH/oh-my-zsh.sh
 # Store your own aliases in the ~/.aliases file and load the here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+[[ -f "/home/linuxbrew/" ]] && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
